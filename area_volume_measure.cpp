@@ -4,25 +4,25 @@ using namespace std;
 //measuring area and volume 
 class measure
 {
-public:
-int length;
-int width;
-int height;
-void setInput(int l,int w,int h)
-{
-length=l;
-width=w;
-height=h;
-}
+    public:
+    int length;
+    int width;
+    int height;
+    void setInput(int l,int w,int h)
+    {
+    length=l;
+    width=w;
+    height=h;
+    }
 
-int area()
-{
-return length * width;
-}
-int volume()
-{
-return length*width*height;
-}
+    int area()
+    {
+    return length * width;
+    }
+    int volume()
+    {
+    return length*width*height;
+    }
 };
 
 
