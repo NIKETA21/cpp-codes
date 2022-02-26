@@ -1,5 +1,4 @@
 #include<iostream>
-
 using namespace std;
 //measuring area and volume 
 class measure
@@ -14,7 +13,6 @@ class measure
     width=w;
     height=h;
     }
-
     int area()
     {
     return length * width;
@@ -24,7 +22,6 @@ class measure
     return length*width*height;
     }
 };
-
 
 int main( )
 {
