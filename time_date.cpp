@@ -12,7 +12,7 @@ class Time //time class to measure current time and give difference between curr
     int sec;
     int settime()
         {
-        time_t now =time(0);
+        time_t now =time(0); //getting time
         tm *ltm=localtime(&now);
         hour=ltm->tm_hour;
         mint=ltm->tm_min;
@@ -30,7 +30,7 @@ Time gettime()
     }
   
 Time sleeptime(Time naptime, Time wakeup)
-    {
+    { //calculating sleep time
     Time temp;
     temp.hour=wakeup.hour - naptime.hour;
     temp.mint=wakeup.mint - naptime.mint;
@@ -56,7 +56,7 @@ int setDate()
     day=ltm->tm_mday;
     return 0;
     }
-Date getdate()
+Date getdate()//getting date
     {
     Date tmp;
     tmp.year=year;
@@ -66,10 +66,10 @@ Date getdate()
     }
 
 Date setdob(Date d)
-{
+{//getting dob
 Date y;
 y.year=d.year;
-y.month=d.month;
+y.month=d.month; 
 y.day=d.day;
 return y;
 }
@@ -80,7 +80,7 @@ Date findage(Date y)
     d2.setDate();
     now=d2.getdate();
     age.year=now.year-y.year;
-    age.month=now.month-y.month;
+    age.month=now.month-y.month;//finding age 
     age.day=now.day-y.day;
     return age;
 
@@ -92,7 +92,7 @@ Date findage(Date y)
 
 int main( )
     {
-    Time t1,t2,t3;
+    Time t1,t2,t3;//defining time objects
     Time timeatsleep,timeatwake;
     t1.settime( );
     t3=t1.gettime( );
