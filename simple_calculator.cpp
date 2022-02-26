@@ -1,7 +1,5 @@
 #include<iostream>
-
 using namespace std;
-
 int main( )
     {
     char op;
@@ -10,7 +8,6 @@ int main( )
     cin>>op;
     cout<<"enter two numbers: "<<endl;
     cin>>num1>>num2;
-
 switch(op) //using switch operation we  get operator  and value of two number from user, and  perform operation 
     {
       case'+':
